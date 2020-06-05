@@ -8,13 +8,13 @@ pipeline {
                AWS_SECRET_ACCESS_KEY = credentials ("AWS_SECRET_ACCESS_KEY")
                }
          steps {
-            echo 'initializing terraform'
+            echo 'ssh to node'
             sh '''
 
            
-         terraform init
+       ssh -i ~/downloads/terraform.pem/ec2-user@ec2-34-250-207-89.eu-west-1.compute.amazonaws.com
         
- terraform apply -auto-approve
+
 
             '''
          }
