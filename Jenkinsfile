@@ -13,7 +13,7 @@ pipeline {
             sh '''
 
             /bin/bash
-            ssh ec2-user@ec2-34-250-207-89.eu-west-1.compute.amazonaws.com
+            ssh -tt ec2-user@ec2-34-250-207-89.eu-west-1.compute.amazonaws.com
        
         
 
