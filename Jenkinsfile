@@ -9,11 +9,11 @@ pipeline {
                }
          steps {
             echo 'ssh to node'
-            /bin/bash
-            ssh ec2-user@ec2-34-250-207-89.eu-west-1.compute.amazonaws.com
+           
             sh '''
 
-           
+            /bin/bash
+            ssh ec2-user@ec2-34-250-207-89.eu-west-1.compute.amazonaws.com
        
         
 
